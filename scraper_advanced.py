@@ -1,4 +1,5 @@
 import os
+import time
 from datetime import date
 import json
 import pandas as pd
@@ -43,8 +44,9 @@ def get_data_from_link(links, channel_name):
 
             # Only break the loop once the comments section is visible
             try:
+                time.sleep(2)
                 driver.find_element(By.XPATH,
-                                    '//*[@id="content-text"]').get_attribute("textContent")
+                                    '//*[@id="count"]/yt-formatted-string/span[1]').get_attribute("textContent")
             except NoSuchElementException:
                 continue
             else:
@@ -128,7 +130,8 @@ def get_video_links():
     # Get every link on the page
     for link in BeautifulSoup(driver.page_source,
                               parser='lxml',
-                              parse_only=SoupStrainer('a')):
+                              parse_only=SoupStrainer('a'),
+                              features="lxml"):
         if link.has_attr('href'):
 
             # Add to list if link is for a video
@@ -202,4 +205,4 @@ def scraper_advanced(url, channel_name):
         else:
             print("Program ended abruptly. Saved the data to the local cache. Please run the program again.\n")
 
-        driver.quit()
+        # driver.quit()
