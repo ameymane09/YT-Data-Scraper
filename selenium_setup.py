@@ -12,8 +12,7 @@ options.add_experimental_option('useAutomationExtension', False)
 options.add_argument("--disable-blink-features")
 options.add_argument("--disable-blink-features=AutomationControlled")
 
-options.add_experimental_option('detach', True)
-
+# Slow down the loading of the page
 options.set_capability('pageLoadStrategy', 'normal')
 
 # Mute audio

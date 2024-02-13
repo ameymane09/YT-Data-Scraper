@@ -205,4 +205,4 @@ def scraper_advanced(url, channel_name):
         else:
             print("Program ended abruptly. Saved the data to the local cache. Please run the program again.\n")
 
-        # driver.quit()
+        driver.quit()
