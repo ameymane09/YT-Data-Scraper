@@ -1,4 +1,16 @@
-# v1.1.0 *2024-01-13*
+# v2.0.0 *2024-02-19*
+
+## What's New?
+- Added the Shorts Scraper and made it work in 2024.
+    - Instead of scraping views and title from the description of the Short, I've scraped it from the initial Shorts page itself.
+- Added a basic UI, but for testing reasons I've kept the UI non-functional for now.
+
+## Future Additions
+- Add the 'save to local cache file' function to the Shorts scraper also.
+
+---
+
+# v1.1.0 *2024-02-13*
 
 The basic scraper code ported from a previous YT scraper I made in 2022, with the updated changes.
 
