@@ -1,4 +1,4 @@
-# **v1.1** 2024-01-13
+# v1.1 *2024-01-13*
 
 The basic scraper code ported from a previous YT scraper I made in 2022, with the updated changes.
 
