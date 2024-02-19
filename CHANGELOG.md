@@ -1,4 +1,4 @@
-# v1.1 *2024-01-13*
+# v1.1.0 *2024-01-13*
 
 The basic scraper code ported from a previous YT scraper I made in 2022, with the updated changes.
 
@@ -16,3 +16,9 @@ The basic scraper code ported from a previous YT scraper I made in 2022, with th
 - Add a Shorts scraper.
 - Add UI to the program.
 - Make an executable so that the program can run independently.
+
+---
+
+# v1.0.0
+
+Ported the basic YouTube Sraper from a previous project.
