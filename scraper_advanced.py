@@ -150,6 +150,11 @@ def scraper_advanced(url, channel_name):
 
     driver.get(url)
 
+    # Close the return YT dislikes extension page
+    driver.switch_to.window(driver.window_handles[0])
+    driver.close()
+    driver.switch_to.window(driver.window_handles[0])
+
     scroll_to_bottom()
 
     folder_path = f'data/Videos/{channel_name}'

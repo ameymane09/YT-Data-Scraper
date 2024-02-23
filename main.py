@@ -1,8 +1,6 @@
 import time
-from scraper_advanced import scraper_advanced
-from shorts_scraper import shorts_scraper
 
-URL = "https://www.youtube.com/@undercitypodcast/shorts"
+URL = "https://www.youtube.com/@undercitypodcast/videos"
 CHANNEL = "Undercity_Podcast"
 
 if __name__ == '__main__':
@@ -17,6 +15,7 @@ if __name__ == '__main__':
         loop_start = time.time()
 
         # Scrape the videos from the channel
+        from scraper_advanced import scraper_advanced
         scraper_advanced(URL, CHANNEL)
 
         loop_end = time.time()
@@ -26,6 +25,7 @@ if __name__ == '__main__':
         loop_start = time.time()
 
         # Scrape the shorts from the channel
+        from shorts_scraper import shorts_scraper
         shorts_scraper(URL, CHANNEL)
 
         loop_end = time.time()
