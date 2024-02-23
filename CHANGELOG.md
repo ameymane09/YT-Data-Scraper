@@ -1,3 +1,18 @@
+# v2.1.0 *2024-02-23*
+
+## What's New?
+- Added the caching functionality to the Shorts Scraper too.
+
+## Bug Fixes
+- Fixed Chrome opening before the prompt for channel name and URL.
+- Closed the dislikes extension page when chrome opens.
+
+## Future Additions
+- Add a DOS based UI to the program.
+- Add an updater script to the program.
+
+---
+
 # v2.0.0 *2024-02-19*
 
 ## What's New?
